@@ -3,6 +3,23 @@ body {
   font-family: 'Calibri Light';
 }
 
+#intro-box {
+    background-color: #c46f00;
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+#description {
+    font-style: italic;
+    font-size: 18pt;
+}
+
 #form-box {
   background-color: burlywood;
   width: 30%;
@@ -16,4 +33,16 @@ body {
 
 .form-input {
     width: 100%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+footer {
+    text-align: center;
 }

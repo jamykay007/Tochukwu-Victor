@@ -7,13 +7,15 @@
   </head>
 
   <body>
-    <h1 id="title">Title of the Survey Form</h1>
-    <p id="description">This is a short explanation of this survey</p>
+    <div id="intro-box">
+      <h1 id="title">Pet Store Survey</h1>
+      <p id="description">The animals are our best friends!</p>
+    </div>
     <div id="form-box">
       <p id="form-intro">
         Hi! Please feel free to fill the form below. The answers will be used to help our pet store.
       </p>
-      <form id="survey-form">
+      <form id="survey-form" action="/" method="post">
         <p>
           <label class="survey-label" for="name" id="name-label">Name</label>
           <input type="text" required class="form-input" id="name" name="name" placeholder="Please type your name here">
@@ -55,11 +57,16 @@
         </p>
         <p>
           <label class="survey-label" for="comments">Feel free to enter your comments below.</label>
-          <textarea id="comments" name="comments"></textarea>
+          <textarea id="comments" name="comments" class="form-input"></textarea>
         </p>
-        <button type="submit" id="submit">Send!</button>
+        <button type="submit" id="submit" class="center">Send!</button>
       </form>
     </div>
+
+    <footer>
+      This page was developed by Victor Moraes and Tochukwu Okosi as a
+      pair-programming exercise for the Microverse trials. (C) 2021.
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
