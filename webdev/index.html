@@ -9,21 +9,57 @@
   <body>
     <h1 id="title">Title of the Survey Form</h1>
     <p id="description">This is a short explanation of this survey</p>
-
-    <form id="survey-form">
-      <label class="survey-label" id="name-label">Name</label><br>
-      <input type="text" id="name" name="name" placeholder="Please type your name here"><br>
-      <label class="survey-label" id="email-label">Email</label><br>
-      <input type="email" id="email" name="email" placeholder="Please type your email here"><br>
-      <label class="survey-label" id="number-label">Age</label><br>
-      <input type="number" min="0" max="120" id="number"  name="age" placeholder="Type your age here"><br>
-      <label class="survey-label" id="dropdown-label">What is your favorite animal?</label>
-      <select id="dropdown" name="pets">
-        <option value=""></option>
-      </select>
-
-
-    </form>
+    <div id="form-box">
+      <p id="form-intro">
+        Hi! Please feel free to fill the form below. The answers will be used to help our pet store.
+      </p>
+      <form id="survey-form">
+        <p>
+          <label class="survey-label" for="name" id="name-label">Name</label>
+          <input type="text" required class="form-input" id="name" name="name" placeholder="Please type your name here">
+        </p>
+        <p>
+          <label class="survey-label" for="email" id="email-label">Email</label>
+          <input type="email" required class="form-input" id="email" name="email" placeholder="Please type your email here">
+        </p>
+        <p>
+          <label class="survey-label" for="age" id="number-label">Age</label>
+          <input type="number" class="form-input" min="0" max="120" id="number" name="age" placeholder="Type your age here">
+        </p>
+        <p>
+          <label class="survey-label" for="pets">What is your favorite animal?</label>
+          <select id="dropdown" name="pets">
+            <option value="cat">Cats</option>
+            <option value="dog">Dogs</option>
+            <option value="rabbit">Rabbits</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p>
+          <label class="survey-label">How do you feed your pets?</label><br>
+          <input type="radio" name="feed" value="cook">
+          <label class="radio-label" for="cook">I cook their food</label><br>
+          <input type="radio" name="feed" value="buy">
+          <label class="radio-label" for="buy">I buy their food</label><br>
+          <input type="radio" name="feed" value="other">
+          <label class="radio-label" for="other">Other</label>
+        </p>
+        <p>
+          <label class="survey-label">Which of those factors affect your choice?</label><br>
+          <input type="checkbox" name="factors" value="price">
+          <label class="checkbox-label" for="price">Price</label><br>
+          <input type="checkbox" name="factors" value="availability">
+          <label class="checkbox-label" for="availability">Availability of stores in my area</label><br>
+          <input type="checkbox" name="factors" value="health">
+          <label class="checkbox-label" for="health">I want to give what is best for my pet's health</label>
+        </p>
+        <p>
+          <label class="survey-label" for="comments">Feel free to enter your comments below.</label>
+          <textarea id="comments" name="comments"></textarea>
+        </p>
+        <button type="submit" id="submit">Send!</button>
+      </form>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

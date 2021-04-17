@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+}
+
+#form-box {
+  background-color: burlywood;
+  width: 30%;
+  margin: auto;
+  padding: 3%;
+}
+
+.form-input {
+    width: 100%;
+}
