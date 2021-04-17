@@ -1,5 +1,6 @@
 body {
   background-color: aquamarine;
+  font-family: 'Calibri Light';
 }
 
 #form-box {
@@ -7,6 +8,10 @@ body {
   width: 30%;
   margin: auto;
   padding: 3%;
+}
+
+#form-intro {
+  text-align: justify;
 }
 
 .form-input {
